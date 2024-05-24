@@ -142,12 +142,44 @@ include "header.php";
 						</div>
 						<div class="col-50">
 							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{6}(?:-[0-9]{4})?$" required>
+							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{4}(?:-[0-9]{4})?$" required>
 						</div>
 						</div>
 					</div>
 					
 					
+					<div class="col-50">
+						<h3>Payment</h3>
+						<label for="fname">Accepted Cards</label>
+						<div class="icon-container">
+						<i class="fa fa-cc-visa" style="color:navy;"></i>
+						<i class="fa fa-cc-amex" style="color:blue;"></i>
+						<i class="fa fa-cc-mastercard" style="color:red;"></i>
+						<i class="fa fa-cc-discover" style="color:orange;"></i>
+						</div>
+						
+						
+						<label for="cname">Name on Card</label>
+						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
+						
+						<div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                    </div>
+						<label for="expdate">Exp Date</label>
+						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22"required>
+						
+
+						<div class="row">
+						
+						<div class="col-50">
+							<div class="form-group CVV">
+								<label for="cvv">CVV</label>
+								<input type="text" class="form-control" name="cvv" id="cvv" required>
+						</div>
+						</div>
+					</div>
+					</div>
 					</div>
 					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Shipping address same as billing
 					</label>';
@@ -250,38 +282,38 @@ include "header.php";
 	</div>
 </section>
 <!-- <div id="newsletter" class="section">
-			container
-			<div class="container">
-				row
-				<div class="row">
-					<div class="col-md-12">
-						<div class="newsletter">
-							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
-							<form >
-								<input class="input" type="email" placeholder="Enter Your Email">
-								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-							</form>
-							<ul class="newsletter-follow">
-								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-instagram"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
+	<-- container --
+	<div class="container">
+		<-- row --
+		<div class="row">
+			<div class="col-md-12">
+				<div class="newsletter">
+					<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+					<form>
+						<input class="input" type="email" placeholder="Enter Your Email">
+						<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+					</form>
+					<ul class="newsletter-follow">
+						<li>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+						</li>
+					</ul>
 				</div>
-				/row
 			</div>
-			/container
-		</div> -->
+		</div>
+		<-- /row --
+	</div>-->
+<!-- /container -->
+</div>
 
 <?php
 include "footer.php";
